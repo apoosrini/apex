@@ -207,7 +207,7 @@ By the end of this lab, you will be able to:
 
     !["Click App Builder"](images/title-link1.png "")
 
-## Task 2: Enhance appearance of an app
+## Task 2: Enhance the Appearance of App
 
 In this task, you will use Theme Roller to quickly transform the appearance of an application without editing any code.
 

@@ -171,11 +171,11 @@ In this task, you will learn how to create a package using APEX Assistant in SQL
 
     !["Click App Builder"](images/copy-insert.png "")
 
-5. First, insert the Package Specification and click **Run**.
+5. First, select the snippet for the Package Specification and click **Run**.
 
     !["Click App Builder"](images/package-spec.png "")
 
-6. Next, insert the Package Body and click **Run**.
+6. Next, select the snippet for the Package Body and click **Run**.
 
     !["Click App Builder"](images/package-body.png "")
 
