@@ -297,6 +297,10 @@ Estimated Time: 5 minutes
 
     !["save and run app"](images/save-run6.png.png "")
 
+8. Click on the 'i' icon next to any ticket to generate a summary.
+
+    !["app running"](images/gen-summary.png "")
+
 ## Summary
 
 In this lab, you created a complete AI-powered ticket summary system in Oracle APEX. You built a modal dialog page that displays formatted ticket summaries with loading indicators, configured RAG sources for data retrieval, implemented automatic text generation on page load, and added a button to the ticket finder page to launch the summary modal. The system provides a seamless user experience for generating and viewing AI-powered ticket summaries with proper loading states and formatted display.

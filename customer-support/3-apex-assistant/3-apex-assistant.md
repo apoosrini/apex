@@ -195,5 +195,5 @@ In this lab, you learned how to use the integrated AI Chat capability (APEX Assi
 
 ## Acknowledgments
 
-- **Author** - Toufiq Mohammed, Principal Product Manager
-- **Last Updated By/Date** - Toufiq Mohammed, Principal Product Manager, January 2026
+- **Authors** - Toufiq Mohammed, Principal Product Manager; Apoorva Srinivas, Principal Product Manager
+- **Last Updated By/Date** - Apoorva Srinivas, Principal Product Manager, January 2026
