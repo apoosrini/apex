@@ -1,8 +1,10 @@
-# Create a Ticket Chat Assistant
+# Create a Support Ticket Chat Assistant
 
 ## Introduction
 
-In this lab, you will learn how to enhance an Oracle APEX application by creating a Ticket Chat Assistant. Using the Show AI Assistant dynamic action, you will build a chatbot that can respond to user queries about support tickets. You will first configure the chatbot without a RAG (Retrieval-Augmented Generation) source to see how it works with generic responses, and then enhance it by creating an AI Configuration and RAG source so the chatbot fetches information directly from your customer support data. This approach demonstrates how to combine low-code development with AI-driven capabilities to deliver smarter, data-aware user experiences.
+In this lab, you learn how to enhance an Oracle APEX application by creating a Support Ticket Chat Assistant. Using the Show AI Assistant dynamic action, you will build a chatbot that can respond to user queries about support tickets. 
+
+You first configure the chatbot without a RAG (Retrieval-Augmented Generation) source to see how it works with generic responses, and then enhance it by creating an AI Configuration and RAG source so that the chatbot fetches information directly from your customer support data. This approach demonstrates how to combine low-code development with AI-driven capabilities to deliver smarter, data-aware user experiences.
 
 Estimated Time: 5 minutes
 
@@ -10,23 +12,23 @@ Estimated Time: 5 minutes
 
 By the end of this lab, you will be able to:
 
-- Create a Ticket Assistant button in your APEX application.
+- Create a Support Ticket Assistant button in your APEX application.
 
 - Configure a Show AI Assistant dynamic action without using a RAG source.
 
 - Create an AI Configuration and define a RAG Source to query customer, account, and ticket data.
 
-- Connect the AI Configuration to the Show AI Assistant dynamic action so the chatbot fetches results exclusively from your ticket data source.
+- Connect the AI Configuration to Show AI Assistant Dynamic Action so that the chatbot fetches results exclusively from your ticket data source.
 
-## Task 1: Set Up Ticket Chat Assistant without a RAG Source
+## Task 1: Set Up Support Ticket Chat Assistant without a RAG Source
 
-1. Close the dialog box. From the runtime developer toolbar, navigate to **Page 5**.
+1. Open the browser window where the app is running. From the runtime developer toolbar, navigate to the page designer by clicking **Page 5**.
 
     >Note: Page number may vary depending on your application. 
 
     !["Click App Builder"](images/navigate-to-page5.png "")
 
-2. In the left pane, right-click **Breadcrumb** and click **Create Button**.
+2. In the left pane, right-click **Breadcrumb** and select **Create Button**.
 
     !["Click App Builder"](images/chatbot-btn.png "")
 
@@ -77,13 +79,13 @@ By the end of this lab, you will be able to:
 
 8. In the app, click the **Ticket Assistant** button and enter a prompt such as **List high priority tickets**.
 
-   The chat assistant currently returns results from a web search, not from our database. To fix this, we will create an AI configuration with a RAG (Retrieval-Augmented Generation) source so that the Ticket Assistant fetches details only from the specified data source.
+   The chat assistant currently returns a result from a web search, not using the data from the database. To fix this, we will create an AI configuration with a RAG (Retrieval-Augmented Generation) source so that the Ticket Assistant fetches details only from the specified data source.
 
     !["Click App Builder"](images/view-chat.png "")
 
 ## Task 2: Create AI Configuration and RAG Source
 
-1. Switch your browser window to App Builder. Navigate to **Shared Components**.
+1. Switch your browser window to the App Builder. Navigate to **Shared Components**.
 
     !["Click App Builder"](images/naviagte-sc.png "")
 
@@ -165,11 +167,11 @@ By the end of this lab, you will be able to:
     </copy>
     ```
 
-    Modify the code if needed.
+    *Modify the code if needed.*
 
     !["Click App Builder"](images/insert-rag.png "")
 
-10. Verify the RAG Source shows **Success** under the Validation column.
+10. Verify the SQL Query shows **Success** under the Validation column.
 
     !["Click App Builder"](images/rag-func1.png "")
 
@@ -178,21 +180,23 @@ By the end of this lab, you will be able to:
 
     - Server-side Condition > PL/SQL Function Body returning Boolean: **RETURN :APP\_PAGE\_ID = 5;**
 
+    >Note: We are using the same AI configuration in two different pages in the application. We add a server-side condition to ensure that a specific RAG source is used depending on the page number.
+
     Click **Create**.
 
     !["Click App Builder"](images/ticket-rag-2.png "")
 
 
 
-## Task 3: Enable Ticket Chat Assistant with RAG Source
+## Task 3: Enable Support Ticket Chat Assistant with RAG Source
 
-1. From the top-right corner, click **Edit Page 3**.
+1. From the top-right corner, click **Edit Page 5**.
 
     >Note: Page number may vary depending on your application.
 
     !["Click App Builder"](images/edit-page5.png "")
 
-2. In the Dynamic Action tab, select True Action **Show AI Assistant** and update the following:
+2. In the Dynamic Action tab, under Ticket Assistant > True, select **Show AI Assistant** and update the following:
 
     - Generative AI > Configuration: **Ticket AI Configuration**
 
@@ -207,7 +211,7 @@ By the end of this lab, you will be able to:
     !["Click App Builder"](images/ticket-conf-msg.png "")
 
 
-4. In the app, click the **Ticket Assistant** button and click **List open high priority tickets**. The chat assistant will now return results using a RAG (Retrieval-Augmented Generation) source, ensuring that details are fetched only from the specified data source.
+4. In the app, click the **Ticket Assistant** button and select **List open high priority tickets**. The chat assistant will now return results using a RAG (Retrieval-Augmented Generation) source, ensuring that details are fetched only from the specified data source.
 
     !["App running"](images/view-ai-chat1.png "")
 
@@ -215,7 +219,7 @@ By the end of this lab, you will be able to:
 
 ## Summary
 
-In this lab, you created a Ticket Chat Assistant by adding a button, configuring AI settings, and setting up a dynamic action, allowing users to interactively ask questions about customer support tickets.
+In this lab, you created a Ticket Chat Assistant by adding a button, configuring AI settings, and setting up a dynamic action, allowing users to interactively ask questions about Customer Support tickets.
 
 ## Acknowledgments
 

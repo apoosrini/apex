@@ -202,5 +202,5 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgments
 
-- **Author** - Toufiq Mohammed, Principal Product Manager
-- **Last Updated By/Date** - Toufiq Mohammed, Principal Product Manager, January 2026
+- **Authors** - Toufiq Mohammed, Principal Product Manager; Apoorva Srinivas, Principal Product Manager
+- **Last Updated By/Date** - Apoorva Srinivas, Principal Product Manager, January 2026

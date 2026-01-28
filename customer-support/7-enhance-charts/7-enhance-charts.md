@@ -2,9 +2,9 @@
 
 ## Introduction
 
-In this lab, you will learn how to enhance charts in Oracle APEX using AI. Instead of manually writing queries, you will use natural language prompts to ask the APEX Assistant to generate the required SQL. This approach speeds up development and shows how AI-powered assistance can simplify complex tasks such as data visualization.
+In this lab, you learn how to enhance charts in Oracle APEX using AI. Instead of manually writing queries, you will use natural language prompts to ask the APEX Assistant to generate the required SQL. This approach speeds up development and shows how AI-powered assistance can simplify complex tasks such as data visualization.
 
-In addition to enhancing charts, you will also create database objects such as tables and PL/SQL packages—directly from the SQL Commands interface using APEX Assistant.
+In addition to enhancing charts, you will also create PL/SQL packages directly from the SQL Commands interface using APEX Assistant.
 
 Estimated Time: 5 minutes
 
@@ -65,17 +65,17 @@ Estimated Time: 5 minutes
 
     !["Click App Builder"](images/fix-this.png "")
 
-9. You can also use **General Assistance** for general conversation or technical questions such as "Explain this" or "Improve this code."  APEX Assistant provides default options such as **Use Selection, Improve Selection, and Explain Selection**.
+9. You can also use **General Assistance** for general conversation or technical questions such as "Explain this" or "Improve this code." APEX Assistant provides default options such as **Use Selection, Improve Selection, and Explain Selection**.
 
     !["Click App Builder"](images/selections.png "")
 
-10. Next, you will map the columns for the Case Status chart. In the Property Editor, enter/select the following:
+10. Next, you will map the columns for the Ticket Status chart. In the Property Editor, enter/select the following:
 
     - Under Column Mapping:
 
         - Label: **STATUS**
 
-        - Value: **CASE_COUNT**
+        - Value: **TICKET_COUNT**
 
         *Note: Column names might differ based on your schema.*
 
@@ -110,7 +110,7 @@ Estimated Time: 5 minutes
 
     !["Click App Builder"](images/click-ok.png "")
 
-16. Map the columns for the Cases By Month chart. In the Property Editor, enter/select the following:
+16. Map the columns for the 'Cases By Month' chart. In the Property Editor, enter/select the following:
 
     - Under Column Mapping:
 
@@ -130,7 +130,7 @@ Estimated Time: 5 minutes
 
 ## Task 2: Create a PL/SQL Package with APEX Assistant
 
-In this task, you will learn how to create a package using APEX Assistant in SQL Commands and explore how it can be leveraged to efficiently generate PL/SQL package code.
+In this task, you learn how to create a package using APEX Assistant in SQL Commands and explore how it can be leveraged to efficiently generate PL/SQL package code.
 
 1. Navigate to **SQL Workshop** and select **SQL Commands**.
 
@@ -191,7 +191,7 @@ In this task, you will learn how to create a package using APEX Assistant in SQL
 
 ## Summary
 
-In this lab, you learned how to use the integrated AI Chat capability (APEX Assistant) in code editors within App Builder and SQL Workshop.
+In this lab, you learnt how to use the integrated AI Chat capability (APEX Assistant) in code editors within App Builder and SQL Workshop.
 
 ## Acknowledgments
 

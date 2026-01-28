@@ -1,8 +1,8 @@
-# Enhance UI with AI
+# Enhance App UI with AI
 
 ## Introduction
 
-In this lab, you will learn how to modernize a classic report in Oracle APEX by converting it into a content row layout. You will also explore how to enhance the report presentation with features like avatars, badges, and title links. Additionally, you will use the AI-powered APEX Assistant to modify SQL queries and generate dynamic HTML for improved descriptions. These enhancements demonstrate how APEX makes it easy to combine low-code development with AI-assisted productivity tools, resulting in a richer and more engaging user experience.
+In this lab, you will learn to modernize a classic report in Oracle APEX by converting it into a content row layout. You will also explore how to enhance the report presentation with features like avatars, badges, and title links. Additionally, you will use the AI-powered APEX Assistant to modify SQL queries and generate dynamic HTML for improved display of ticket description. These enhancements demonstrate how Oracle APEX makes it easy to combine low-code development with AI-assisted productivity tools, resulting in a richer and more engaging user experience.
 
 Estimated Time: 5 minutes
 
@@ -10,7 +10,7 @@ Estimated Time: 5 minutes
 
 By the end of this lab, you will be able to:
 
-- Convert a classic report into a content row layout to improve readability and design.
+- Convert a Classic Report into a Content Row layout that improves readability and design.
 
 - Use AI-powered APEX Assistant in the code editor to extend SQL queries and generate HTML.
 
@@ -18,13 +18,13 @@ By the end of this lab, you will be able to:
 
 ## Task 1: Convert a Classic Report into a Content Row
 
-1. From the browser tab where the app is running, navigate to your faceted search page. In this lab, the page is called *Ticket Explorer*. The name might differ because the app was generated using AI.
+1. From the browser tab where the app is running, navigate to your Faceted Search page. In this lab, the page is called *Ticket Explorer*. 
 
     !["Click App Builder"](images/ticket-explorer.png "")
 
     >Note: Since the page name is AI-generated, it may differ. This is the Faceted Search page created on the *CS_TICKETS* table.
 
-2. From the Developer Toolbar, click **Page 5**.
+2. From the Runtime Developer Toolbar, click **Page 5**.
 
     !["Click App Builder"](images/edit-page.png "")
 
@@ -40,7 +40,7 @@ By the end of this lab, you will be able to:
 
     !["Click App Builder"](images/code-edit.png "")
 
-5. Select your SQL Query. Click **APEX Assistant** and add the following prompt:
+5. Select the SQL Query. Click **APEX Assistant** and enter the following prompt:
 
     **Prompt 1:**
     ```
@@ -52,7 +52,7 @@ By the end of this lab, you will be able to:
 
     !["Click App Builder"](images/add-prompt.png "")
 
-6. Click **Insert**, or replace the existing SQL query with the one provided below to generate the same output for this workshop:
+6. Click **Insert**, or replace the existing SQL query with the one provided below to generate an expected output for this workshop:
 
     *Note: By replacing it with the provided code, we ensure that your application behaves consistently and matches the expected outcome.*
 
@@ -125,7 +125,7 @@ By the end of this lab, you will be able to:
 
     !["Click App Builder"](images/desc-code-editor.png "")
 
-10. Click **APEX Assistant**. Now add the following prompts:
+10. Click **APEX Assistant**. Now enter the following prompts and hit enter:
 
     **Prompt 1:**
      ```
@@ -170,11 +170,12 @@ By the end of this lab, you will be able to:
 
     !["Click App Builder"](images/saverun.png "")
 
-13. Now, view the updated content row report.
+13. View the updated Content Row report.
 
     !["Click App Builder"](images/view-content-row.png "")
 
-14. Next, let's add a hyperlink to the title to open a form page. Switch to the Page Designer tab. In the left pane, under **Tickets** region, right-click **Actions** and click **Create Action**.
+14. Next, let's add a hyperlink to the title to open a form page. Switch to the Page Designer tab. 
+    In the left pane, under **Tickets** region, right-click **Actions** and click **Create Action**.
 
     !["Click App Builder"](images/create-action.png "")
 
@@ -184,13 +185,13 @@ By the end of this lab, you will be able to:
 
     - Link > Target: Click **No Link Defined**
 
-        - Target > Page: **12** (The Page number may vary in your generated app. Choose the Ticket Details Form page.)
+        - Target > Page: **12** (The page number may vary in your generated app. Choose the **Ticket Detail**s Form page.)
 
         - Set Items:
 
             | Name | Value |
             | ----- | ---- |
-            | P12_ID | &ID.|
+            | P12_TICKET_ID | &TICKET_ID.|
             {: title="Set Items"}
 
         - Clear Cache: **12**
@@ -207,9 +208,9 @@ By the end of this lab, you will be able to:
 
     !["Click App Builder"](images/title-link1.png "")
 
-## Task 2: Enhance the Appearance of App
+## Task 2: Enhance the Appearance of the App
 
-In this task, you will use Theme Roller to quickly transform the appearance of an application without editing any code.
+In this task, you use the Theme Roller to quickly transform the appearance of an application without editing/writing any code.
 
 1. When you run an application from App Builder and view a page, the Runtime Developer toolbar displays at the bottom of any editable running page.
 
@@ -243,7 +244,7 @@ In this task, you will use Theme Roller to quickly transform the appearance of a
 
     - Body Background: **Dark**
 
-6. Click **Save** to save the theme.
+6. Click **Save As** to save the theme.
 
     !["Click App Builder"](images/appearnace.png "")
 

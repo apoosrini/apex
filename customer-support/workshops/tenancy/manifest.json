@@ -19,28 +19,28 @@
           }
       },
       {
-        "title": "Lab 2: Create Data Model using Generative AI",
+        "title": "Lab 2: Create a Custom Data Model using Generative AI",
         "filename": "../../1-create-data-model-using-ai/1-create-data-model-using-ai.md"
       },
       {
-        "title": "Lab 3: Create the Application using Generative AI",
+        "title": "Lab 3: Build the Customer Support Application using Generative AI",
           "filename": "../../2-create-app/2-create-app.md"
       },
       {
-        "title": "Lab 4: Enhance UI with AI",
+        "title": "Lab 4: Enhance App UI with AI",
           "filename": "../../4-ui-apex-assistant/4-ui-apex-assistant.md"
       },
       {
-        "title": "Lab 5: Create a Case Chat Assistant",
+        "title": "Lab 5: Create a Support Ticket Chat Assistant",
           "filename": "../../5-chat-bot/5-chat-bot.md"
       },
       {
-        "title": "Lab 6: Generate Case Summary with AI",
+        "title": "Lab 6: Generate Support Ticket Summary with AI",
           "filename": "../../6-generate-text/6-generate-text.md"
       },
       {
         "title": "Lab 7 [OPTIONAL]: Enhance Charts and Database Objects using AI",
-          "filename": "../../3-apex-assistant/3-apex-assistant.md"
+          "filename": "../../7-enhance-charts/7-enhance-charts.md"
       },
       {
         "title": "Need Help?",

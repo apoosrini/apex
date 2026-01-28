@@ -1,8 +1,8 @@
-# Create a Data Model using Generative AI
+# Create a Custom Data Model using Generative AI
 
 ## Introduction
 
-In this lab, you learn how to create a Customer Support data model using Generative AI. Ensure you have a secure key for accessing OCI Generative AI, OpenAI or Cohere services. You will then use Generative AI to create a schema that includes customers, accounts, agents, support tickets, ticket timelines, interactions, and SLAs for managing support operations.
+In this lab, you learn how to create a Customer Support data model using Generative AI. Ensure you have a secure key for accessing OCI Generative AI, OpenAI or Cohere services (Refer to Lab 1). You will then use Generative AI to create a schema that includes customers, accounts, agents, support tickets, ticket timelines, interactions, and SLAs for managing support operations.
 
 Estimated Time: 5 minutes
 
@@ -20,13 +20,13 @@ In this lab, you will:
 
 - An APEX Workspace
 
-## Task 1: Create Customer Support Data Model using AI
+## Task 1: Create a Data Model for Customer Support using AI
 
-To create a data model with AI, ensure that you have configured Generative AI Service and enabled **Used by App Builder** (Refer to the previous Task). If a Generative AI Service is not configured, the Create Data Model Using AI option will not be visible.
+To create a data model with AI, ensure that you have configured a Generative AI Service and enabled **Used by App Builder** (Refer to Lab 1). If a Generative AI Service is not configured, the *Create Data Model Using AI* option will not be visible.
 
-In this task, you will learn how to leverage Oracle APEX's Generative AI Service to build a Customer Support Data Model without writing SQL manually. By providing simple prompts, you will generate database objects, refine them, and add sample records automatically.
+In this task, you learn how to leverage Oracle APEX's Generative AI Service to build a Customer Support Data Model without writing SQL manually. By providing simple prompts, you will generate database objects, refine them, and add sample data automatically.
 
-1. Login to your Application. On the Workspace home page, click **SQL Workshop**.
+1. Login to your APEX Workspace. On the Workspace home page, click **SQL Workshop**.
 
     ![select sql workshop](./images/select-sql-workshop.png " ")
 
@@ -40,13 +40,13 @@ In this task, you will learn how to leverage Oracle APEX's Generative AI Service
 
     ![select create data model alternate](./images/click-create-data-model.png " ")
 
-    >**Note:** You can also access Create Data Model Using AI directly from the Tasks list on the SQL Workshop home page.
+    >**Note:** You can also access *Create Data Model Using AI* directly from the Tasks list on the SQL Workshop home page.
 
-4. When using Generative AI features within the APEX development environment *for the first time*, you will be asked to provide consent. In the **APEX Assistant** Wizard, if you see a Dialog regarding **consent**. Click on **Accept**.
+4. When using Generative AI features within the APEX development environment *for the first time*, you will be asked to provide consent. In the **APEX Assistant** Wizard, if you see a Dialog requesting consent, click **Accept**.
 
     ![provide consent](./images/provide-consent.png " ")
 
-5. You will use the **APEX Assistant** Wizard to create a Customer Support Data Model using AI. To do this, enter the prompts mentioned below. Make sure that you choose **Oracle SQL** for **SQL Format**.
+5. You will use the **APEX Assistant** Wizard to create a Customer Support Data Model using AI. To do this, enter the prompts mentioned below. At the bottom of the dialog, for **SQL Format**, make sure that you choose **Oracle SQL**.
 
     **Prompt 1:**
     ```
@@ -68,7 +68,7 @@ In this task, you will learn how to leverage Oracle APEX's Generative AI Service
 
     !["provide prompt"](images/add-supporting-entities.png "")
 
-7. The APEX Assistant provides options to select from two types of SQL Formats: Oracle SQL and Quick SQL. Before you provide the next prompt, choose SQL Format as **Quick SQL**. Add a prompt to update prefix of all database objects.
+7. The APEX Assistant provides options to select from two types of SQL Formats: *Oracle SQL* and *Quick SQL*. Before you provide the next prompt, for SQL Format, choose **Quick SQL**. Add a prompt to update prefix of all database objects.
 
     **Prompt 3:**
     ```
@@ -103,7 +103,7 @@ In this task, you will learn how to leverage Oracle APEX's Generative AI Service
 
     !["provide script name"](images/use-selection.png "")
 
-12. In APEX Assistant box, enter the prompt to generate sample data for that tables.
+12. In APEX Assistant box, enter the following prompt to generate sample data for that tables:
 
     **Prompt 1:**
     ```
@@ -114,7 +114,7 @@ In this task, you will learn how to leverage Oracle APEX's Generative AI Service
 
     !["provide script name"](images/generate-sample-data.png "")
 
-13. **Copy** the generated insert queries from the APEX Assistant box.
+13. **Copy** the generated queries (DML statements) from the APEX Assistant box.
 
     !["provide script name"](images/copy-query.png "")
 
@@ -202,7 +202,7 @@ In this task, you will learn how to leverage Oracle APEX's Generative AI Service
 
     !["run now"](images/run-now.png "")
 
-18. The Manage Script Results page appears listing script results.
+18. The Manage Script Results page displays the script results.
 
     !["data model created"](images/script-summary.png "")
 

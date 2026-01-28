@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will enhance your Oracle APEX application by creating a modal dialog page that displays AI-generated ticket summaries. You will create a modal dialog page with page items for ticket ID and summary text, configure a RAG source to fetch comprehensive ticket details including interaction counts, and implement a close button with dynamic action to close the dialog.
+In this lab, you enhance your Oracle APEX application by creating a modal dialog page that displays AI-generated ticket summaries. You create a modal dialog page and configure a RAG source to fetch comprehensive ticket details including interaction counts.
 
 Estimated Time: 5 minutes
 
@@ -50,6 +50,8 @@ Estimated Time: 5 minutes
 
 ## Task 2: Create Page Items
 
+In this task, we create two hidden page items which stores the required values to pass to the modal dialog page.
+
 1. In the Page Designer for Page 13, go to the **Rendering** tab.
 
 2. Right-click **Page Items** and select **Create Page Item**.
@@ -80,8 +82,9 @@ Estimated Time: 5 minutes
 
 5. Click **Save**.
 
-## Task 2.5: Create Dynamic Content Region
+## Task 3: Create a Dynamic Content Region
 
+In this task, we create a Dynamic Content Region that will display the AI0gnenerated description dynamically.
 
 1. In the Rendering Pane, right-click **Content Body** region and select **Create Region**.
 
@@ -111,7 +114,9 @@ Estimated Time: 5 minutes
 
 4. Click **Save**.
 
-## Task 3: Add Close Button with Dynamic Action
+## Task 4: Add a Close Button with Dynamic Action
+
+In this task, we create a button to close the modal dialog. 
 
 1. In the Page Designer for Page 13, go to the **Rendering** tab. Right-click **Dialog Footer** region and select **Create Button**.
 
@@ -145,7 +150,7 @@ Estimated Time: 5 minutes
 
 7. Click **Save**.
 
-## Task 4: Generate Text Using AI Dynamic Action
+## Task 5: Create the 'Generate Text Using AI' Dynamic Action
 
 1. In Page Designer for Page 13, switch to the **Dynamic Actions** tab.
 
@@ -191,7 +196,7 @@ Estimated Time: 5 minutes
 
 7. Click **Save**.
 
-## Task 5: Add Generate Ticket Summary Action to Tickets Report
+## Task 6: Add Generate Ticket Summary Action to Tickets Report
 
 1. Click the page finder on the toolbar. Navigate to **Page 5** (Faceted Search page).
 
@@ -205,35 +210,34 @@ Estimated Time: 5 minutes
 
 4. In the Action properties:
 
-    - **Position**: **Primary Actions**
+    - Position: **Primary Actions**
 
-    - **Template**: **Button**
+    - Template: **Button**
 
-    - **Label**: **Generate Ticket Summary**
+    - Label: **Generate Ticket Summary**
 
-    - **Type**: **Redirect to Page**
+    - Type: **Redirect to Page**
 
     !["create action"](images/action2-details.png "")
 
-    - **Target**:
+    - Target:
 
-        - **Page**: **13**
+        - Page: **13**
 
-        - **Set Items**:
+        - Set Items:
 
-            - **Name**: **P13\_TICKET\_ID**
+            - Name: **P13\_TICKET\_ID**
 
-            - **Value**: **&TICKET\_ID.**
+            - Value: **&TICKET\_ID.**
 
     !["create action"](images/target-link-details.png "")
 
-    - **Icon**: **fa-info-circle**
+    - Icon: **fa-info-circle**
 
     !["create action"](images/icon.png "")
 
 5. Click **Save**.
 
-## Task 6: Define RAG Source
 
 1. Navigate to **Shared Components**.
 
@@ -243,7 +247,7 @@ Estimated Time: 5 minutes
 
     !["Click App Builder"](images/ai-conf3.png "")
 
-3. Select **Ticket AI Configuration** (created in the previous lab). If you haven't created it yet, follow Lab 5 to set it up first.
+3. Select **Ticket AI Configuration** (created in the previous lab). If you haven’t set it up yet, please complete **[Lab 5: Task 2](?lab=5-chat-bot#Task2:CreateAIConfigurationandRAGSource)** first.
 
     !["Click App Builder"](images/select-ticket-config.png "")
 
@@ -295,7 +299,7 @@ Estimated Time: 5 minutes
 
 7. **Save and Run** the app.
 
-    !["save and run app"](images/save-run6.png.png "")
+    !["save and run app"](images/save-run6.png "")
 
 8. Click on the 'i' icon next to any ticket to generate a summary.
 
@@ -303,7 +307,7 @@ Estimated Time: 5 minutes
 
 ## Summary
 
-In this lab, you created a complete AI-powered ticket summary system in Oracle APEX. You built a modal dialog page that displays formatted ticket summaries with loading indicators, configured RAG sources for data retrieval, implemented automatic text generation on page load, and added a button to the ticket finder page to launch the summary modal. The system provides a seamless user experience for generating and viewing AI-powered ticket summaries with proper loading states and formatted display.
+In this lab, you created a complete AI-powered Support Ticket summary system in Oracle APEX. You built a modal dialog page that displays formatted ticket summaries with loading indicators, configured RAG sources for data retrieval, implemented automatic text generation on page load, and added a button to the ticket finder page to launch the summary modal. The system provides a seamless user experience for generating and viewing AI-powered ticket summaries with proper loading states and formatted display.
 
 ## Acknowledgments
 
