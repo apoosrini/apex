@@ -39,7 +39,7 @@ In this lab, you will:
 7. On the confirmation screen, click Run.
     ![Confirm Run](images/confirm-run.png ' ')
 
-
+8. If the Quick SQL generated SQL script throws errors or you would like to run the final SQL script directly, download the [TMS_SCHEMA SQL script](files/TMS_SCHEMA.sql). 
 
 ## Task 2: Add the optional vector column
 
