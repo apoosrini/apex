@@ -80,7 +80,7 @@ tms_onboarding_tasks
   assigned_to vc255
   category vc80
   due_date date
-  status vc30 /check Not Started, In Progress, Completed, Blocked, Cancelled, Overdue
+  status vc30 /check 'Not Started', 'In Progress', 'Completed', 'Blocked', 'Cancelled', 'Overdue'
   completed_date date
 
 tms_leave_types
