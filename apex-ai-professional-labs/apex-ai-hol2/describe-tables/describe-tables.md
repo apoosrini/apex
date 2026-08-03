@@ -10,9 +10,9 @@ Estimated Time: 5 minutes
 
 In this lab, you will:
 
-- Open the Describe Tables feature.
-- Select Talent Acquisition Portal (TAP) and shared tables.
-- Download or save the resulting schema metadata.
+    - Open the Describe Tables feature.
+    - Select Talent Acquisition Portal (TAP) and shared tables.
+    - Download or save the resulting schema metadata.
 
 ## Task 1: Describe the tables
 
@@ -38,6 +38,5 @@ In this lab, you will:
 
 
 ## Acknowledgements
-
 * **Author** - Apoorva Srinivas, Principal Product Manager; Roopesh Thokala, Principal Product Manager
 * **Last Updated By/Date** - Apoorva Srinivas, Principal Product Manager, July 2026

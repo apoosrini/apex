@@ -41,57 +41,6 @@ In this lab, you will:
 
     ![SQL script run result](images/run-result.png ' ')
 
-<!--## Task 1: Open Data Generator
-
-1. In SQL Workshop, select **Utilities**, then select **Data Generator**.
-
-    ![Data Generator](images/select-data-generator.png ' ')
-
-2. Click **Create Blueprint**.
-    ![Create Blueprint](images/create-blueprint.png ' ')
-
-3. Select **Use Existing Tables**.
-    ![Create Tables Blueprint](images/use-existing-tables.png ' ')
-
-4. For Blueprint Name, enter **TMS Blueprint**. Select all the tables that begin with `TMS_`. Then, click **Create Blueprint**.
-
-    ![Data Generator with TMS tables selected.](images/data-generator-tms-tables.png ' ')
-
-## Task 2: Set row counts
-
-1. Use these approximate row counts for the initial data set.
-
-    - `TMS_DEPARTMENTS`: Number of Rows: 8
-    - `TMS_JOBS`: Number of Rows: 10
-    - `TMS_JOB_REQUISITIONS`: Number of Rows: 15
-    - `TMS_CANDIDATES`: Number of Rows: 60
-    - `TMS_INTERVIEW_STAGES`: Number of Rows: 25
-    - `TMS_OFFERS`: Number of Rows: 10
-    - `TMS_EMPLOYEES`: Number of Rows: 20
-
-    The screenshot shows setting the Number of Rows for one of the tables: **TMS_CANDIDATES**. 
-
-    Click **Save**.
-
-    ![number of rows](images/num-of-rows.png ' ')
-
-
-## Task 3: Generate data
-
-1. Click **Generate Data**. 
-    ![generate data](images/generate-data.png ' ')
-
-2. In the Generate Blueprint Data dialog, for Action select **Insert into Database**. Then, click **Insert Data**.
-
-    ![insert data](images/insert-data.png ' ')
-
-2. Review the success message before closing the dialog.
-
-    ![review success message](images/success-message.png ' ')
-
-3. Navigate to the Object Browser and select a table such as `TMS_CANDIDATES`. Switch to the **Data** tab and review the inserted data.
-
-    ![Object Browser](images/review-data.png ' ') -->
 
 ## Acknowledgements
 
